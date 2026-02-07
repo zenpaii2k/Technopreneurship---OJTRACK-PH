@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>OJTrack PH | Login</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+
+    <div class="login-wrapper">
+    
+        <div class="logo">
+        <img src="/home/iglb/TECHNOPRE/received_2043030909606541.jpeg" alt="OJTrack PH logo" style="width:300px;height:300px">
+        <h1>OJTrackPH</h1>
+        <p>Your Student-Tailored OJT Tracking Tool</p>
+        </div>
+
+        <form action="php/login.php" method="POST" class="login-card"> 
+
+            <h2>Welcome Back</h2>
+
+            <label>Student ID / Email</label>
+            <input type="text" name="studentid" placeholder="Enter ID or Email" required>
+            
+            <label>Password</label>
+            <input type="password" name="psw" placeholder="Enter Password" required>
+
+            <label class="checkbox">
+            <input type="checkbox"> Remember me
+            </label>
+
+            <select name="role">
+                <option value="student">Student</option>
+                <option value="supervisor">Supervisor</option>
+            </select>
+
+            <button type="submit">Login</button>
+
+        </div class="links">
+        <a href="#">Forgot Password?</a>
+    </div>
+           
+        </form>
+
+        <p class="footer">OJTrack PH. Created in 2026.</p>
+
+        </div>
+    </body>
+</html>
