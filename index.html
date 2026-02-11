@@ -1,50 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset = "UTF-8">
-        <title>OJTrack PH | Login</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJTrack PH - DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <div class="login-wrapper">
-    
-        <div class="logo">
-        <img src="/home/iglb/TECHNOPRE/received_2043030909606541.jpeg" alt="OJTrack PH logo" style="width:300px;height:300px">
-        <h1>OJTrackPH</h1>
-        <p>Your Student-Tailored OJT Tracking Tool</p>
-        </div>
+    <div class="dashboard-container">
+        
+        <nav class="sidebar">
+            <div class="sidebar-links">
+                <a href="#">Task</a>
+                <a href="#">Portfolio</a>
+                <a href="#">OJT Progress</a>
+                <a href="#">Supervisor Feedback</a>
+                <a href="#">Recent Activities</a>
+                <a href="#">Make PDF Report</a>
+                <a href="#">Activities</a>
+            </div>
+        </nav>
 
-        <form action="php/login.php" method="POST" class="login-card"> 
-
-            <h2>Welcome Back</h2>
-
-            <label>Student ID / Email</label>
-            <input type="text" name="studentid" placeholder="Enter ID or Email" required>
+        <div class="top-content">
             
-            <label>Password</label>
-            <input type="password" name="psw" placeholder="Enter Password" required>
+            <header class="dashboard-header">
+                <div class="companyheader">
+                <img src="" alt="OJTrack PH Logo" class="header-logo">
+                <h1 class="site-title">OJTrack PH</h1>
+            </div>
 
-            <label class="checkbox">
-            <input type="checkbox"> Remember me
-            </label>
+                <div class="header-tools">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="header-icons">
+                        <span class="icon">✉️</span>
+                        <span class="icon">🔔</span>
+                        <span class="icon">👤</span>
+                    </div>
+                </div>
+            </header>
 
-            <select name="role">
-                <option value="student">Student</option>
-                <option value="supervisor">Supervisor</option>
-            </select>
+            <div class="main-layout">
+                
+                <main class="center-content">
+                    <section class="ojtprogress-banner">
+                        <div class="progress-info">
+                            <span class="label">OJT Progress:</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-fill" style="width: 67%;">67% Complete</div>
+                            </div>
+                        </div>
+                        <h2>Hello (Name) Your OJT will end in:</h2>
+                        <h3 class="end-date">FEB 24 2027</h3>
+                    </section>
 
-            <button type="submit">Login</button>
+                    <section class="action-grid">
+                        <button class="action-btn">Log OJT Attendance</button>
+                        <button class="action-btn">Make PDF Report</button>
+                        <button class="action-btn">View Supervisor Feedback</button>
+                        <button class="action-btn">Task</button>
+                        <button class="action-btn">View OJT Progress</button>
+                        <button class="action-btn">Activities</button>
+                    </section>
+                </main>
 
-        </div class="links">
-        <a href="#">Forgot Password?</a>
+                <aside class="widgets-area">
+                    <div class="widget cal-widget">
+                        <h4>Calendar</h4>
+                        <div class="cal-placeholder">Jan 2027</div>
+                    </div>
+                    
+                    <div class="widget todo-widget">
+                        <span>✓</span>
+                        <h4>TO-DO: <span>+</span></h4>
+                        <ul class="todo-list">
+                            </ul>
+                    </div>
+
+                    <div class="widget announce-widget">
+                        <h4>Announcements</h4>
+                    </div>
+                </aside>
+
+            </div> 
+        </div> 
     </div>
-           
-        </form>
 
-        <p class="footer">OJTrack PH. Created in 2026.</p>
-
-        </div>
-    </body>
+</body>
 </html>
