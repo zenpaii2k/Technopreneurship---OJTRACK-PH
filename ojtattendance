@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJTrack PH - DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ojt-attendance-container">
+
+        <div class="top-content">
+            
+            <header class="dashboard-header">
+                <div class="companyheader">
+                <img src="" alt="OJTrack PH Logo" class="header-logo">
+                <h1 class="site-title">OJTrack PH</h1>
+            </div>
+
+                <div class="header-tools">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <nav class="header-icons">
+                        <a href ="#" title = "Messages">✉️</a>
+                        <a href ="#" title = "Notifications">🔔</a>
+                        <a href ="#" title = "Profile">👤</a>
+                        <a href ="#" title = "Light Mode">☀️</a>
+                        <a href ="#" title = "Dark Mode">🌙</a>
+                    </nav>
+                </div>
+            </header>
+
+        <main class="tracker-layout">
+        
+        <section class="attendance-section">
+            <div class="title">
+                <h2 class="main-title">OJT Attendance Tracker</h2>
+                <p class="subtitle">Log your daily attendance</p>
+            </div>
+
+            <div class="tracker-card">
+                <div class="date-header">
+                    <span class="calendar-icon">🗓️</span>
+                    <p>Today's date is: <span class="datetime"></span></p>
+                </div>
+
+                <form class="attendanceform">
+                    <div class="time-inputs">
+                        <div class="input-group">
+                            <label>Time In</label>
+                            <div class="select-row">
+                                <select name="hour-in"><option>00</option></select>
+                                <span class="colon">:</span>
+                                <select name="minute-in"><option>00</option></select>
+                                <select name="period-in"><option>AM</option><option>PM</option></select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Time Out</label>
+                            <div class="select-row">
+                                <select name="hour-out"><option>00</option></select>
+                                <span class="colon">:</span>
+                                <select name="minute-out"><option>00</option></select>
+                                <select name="period-out"><option>AM</option><option>PM</option></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upload-part">
+                        <label>Attach Documents (Optional)</label>
+                        <div class="file-input">
+                            <input type="file" id="file-upload" hidden>
+                            <label for="file-upload" class="file-btn">Choose File</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Log</button>
+                </form>
+            </div>
+        </section>
+
+        <aside class="tracker-sidebar">
+            <div class="calendar-widget">
+                <header class="widget-header">
+                    <h3>Calendar</h3>
+                    <span class="month-year">February - 2026</span>
+                </header>
+                <div class="calendar-show">
+                    <img src="" alt="Calendar View">
+                </div>
+            </div>
+
+            <div class="summary-widget">
+                <header class="widget-header">
+                    <h3>Summary</h3>
+                </header>
+                <div class="summary-content">
+                    <p>Total Days Logged</p>
+                    <div class="stat-row">
+                        <span class="stat-number">0</span>
+                        <span class="stat-icon">🗓️</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        </div> 
+    </div>
+
+</body>
+</html>
