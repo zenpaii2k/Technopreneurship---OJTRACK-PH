@@ -157,6 +157,172 @@ body {
 }
 
 
+// LOGIN PROPER HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OJTrack PH - LOGIN PROPER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginproper.css">
+</head>
+
+<body>
+
+                <div class="page-container">
+
+                <header class="site-header">
+                    <div class="company-header">
+                     <img src="images/633412968_1977516346287127_5918068733792267466_n.jpg" class="header-logo">
+                     <h1>OJTrack PH</h1>
+                </div>
+            </header>
+
+        <main class="login-content">
+
+        <section class="login-card">
+
+            <h2>WELCOME TO</h2>
+
+            <div class="logo">
+            <img src="images/610551570_1263199728988936_4834396701990071248_n-removebg-preview.png">
+            </div>
+
+        <div class="form-card">
+
+        <form>
+
+        <label>Email</label>
+        <input type="email" placeholder="Value" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Value" required>
+
+        <button type="submit">Sign In</button>
+
+        <p class="forgot">
+            <a href="forgotpass.html">Forgot password?</a>
+        </p>
+
+        </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+</div>
+
+</body>
+</html>
+
+//LOGIN PROPER CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #4c4c4c;
+    color: white;
+}
+
+.site-header {
+    background: #373737;
+    padding: 10px 25px;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    width: 40px;
+}
+
+.company-header h1 {
+    color: #ffd400;
+}
+
+.login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.login-card {
+    background: #1f1f1f;
+    width: 360px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+}
+
+.login-card h2 {
+    color: #ffd400;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    align-items: center;
+    margin-right: 200%;
+    max-width: 100%; 
+    height: auto;
+}
+
+.form-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #ffd400;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.forgot {
+    text-align: left;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.forgot a {
+    color: #3f63c6;
+    text-decoration: none;
+}
+
 </div>
 
 </body>
