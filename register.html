@@ -1,102 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>OJTrack PH - REGISTRATION</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<title>OJTrack PH - REGISTRATION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="register.css">
+</head>
+
 <body>
 
-    <div class="page-container">
-
         <header class="site-header">
-            <div class="companyheader">
-                <img src="" alt="OJTrack PH Logo" class="header-logo">
-                <h1 class="site-title">OJTrack PH</h1>
+            <div class="company-header">
+            <img src="images/633412968_1977516346287127_5918068733792267466_n.jpg" class="header-logo">
+            <h1>OJTrack PH</h1>
             </div>
         </header>
 
-        <main class="registration-content">
-            <section class="registration-box">                
-               <h2 class="welcome-text">REGISTER</h2> 
+                <main class="center">
 
-               <form action="php/register.php" method="POST">
+                    <section class="register-panel">
 
-                <label>Email</label>
-                <input type ="text" name = "email" placeholder="Enter email" required>
+                    <h2 class = "register-title">REGISTER</h2>
 
-                 <label>Password</label>
-                <input type ="password" name = "passwd" placeholder="Enter password" required>           
+                    <div class="form-card">
 
-                <label class="terms-check">
-                <input type="checkbox"> I agree with the terms and conditions of this website.
-               </label>
+                <form>
 
-                <div class="registration-button">
-                <button class="btn-register">Register</button>
-                </div>
+                    <div class="field">
+                    <label>Email</label>
+                    <input type="email" required>
+                    </div>
 
-               </form>            
-          </section>
+                    <div class="field">
+                    <label>Password</label>
+                    <input type="password" required>
+                    </div>
 
-        </main>
+                    <div class="terms">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">I agree with the terms and conditions</label>
+                    </div>
 
-    </div>
+                <div class="submit-btn">
+                    
+                <a href="register1.html">
+                <button class = "submit-btn">Submit</button>
+                </a>
+
+             </form>
+
+        </div>
+
+</section>
+
+</main>
 
 </body>
 </html>
+
 
 // PART 2 REGISTRATION
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>OJTrack PH - REGISTRATION</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-<body>
+<title>OJTrack PH - REGISTRATION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="register.css">
+</head>
 
-    <div class="page-container">
+    <body>
 
-        <header class="site-header">
-            <div class="companyheader">
-                <img src="" alt="OJTrack PH Logo" class="header-logo">
-                <h1 class="site-title">OJTrack PH</h1>
+            <header class="site-header">
+                <div class="company-header">
+                <img src="images/633412968_1977516346287127_5918068733792267466_n.jpg" class="header-logo">
+                <h1>OJTrack PH</h1>
             </div>
-        </header>
+            </header>
 
-        <main class="registration1-content">
-            <section class="registration-1box">                
-               <h2 class="welcome1-text">REGISTER</h2> 
+        <main class="center">
 
-               <form action="php/register1.php" method="POST">
+        <section class="register-panel">
 
-                <label>Name</label>
-                <input type ="text" name = "fname" placeholder="Enter name" required>
+        <h2 class = "register-title">REGISTER</h2>
 
-                <label>Surname</label>
-                <input type ="text" name = "surname" placeholder="Enter surname" required>     
-                
-                <label>Email</label>
-                <input type ="email" name = "email1" placeholder="Enter email" required>           
+        <div class="form-card">
 
-                <label>Message</label>
-                <input type ="text" name = "msg" placeholder="Enter message">      
+            <form>
 
-                <div class="registration1-button">
-                <button class="btn-register1">Submit</button>
-                </div>
+            <label>Name</label>
+            <input type="text" required>
 
-               </form>            
-          </section>
+            <label>Surname</label>
+            <input type="text" required>
 
-        </main>
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Message</label>
+            <textarea></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
 
     </div>
 
+</section>
+
+</main>
+
 </body>
 </html>
+
 
 // PART 3 REGISTRATION
 
@@ -203,3 +220,109 @@
 
 </body>
 </html>
+
+
+// REGISTRATION CSS
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body {
+    background:#4c4c4c;
+}
+
+.site-header {
+    background:#373737;
+    padding:10px 25px;
+}
+
+.company-header {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.header-logo {
+    width:40px;
+}
+
+.company-header h1 {
+    color:#ffd400;
+}
+
+.center {
+    min-height:calc(100vh - 60px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.register-title {
+    font-size: 48px; 
+    color: white;
+    position: absolute;
+     top: 75px;
+     left: 16px;
+}
+
+.register-panel {
+
+    background:#1f1f1f;
+    width:360px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.form-card {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.field {
+    margin-bottom:12px;
+}
+
+label {
+    display:block;
+    font-size:12px;
+    margin-bottom:4px;
+    color:black;
+}
+
+input {
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.terms {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:10px 0;
+    font-size:12px;
+    color:black;
+}
+
+.terms input {
+    width:auto;
+}
+
+.submit-btn {
+    width:100%;
+    padding:10px;
+    background:#ffd400;
+    border:none;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+    text-decoration: none;
+}
