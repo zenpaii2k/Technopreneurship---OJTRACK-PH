@@ -9,18 +9,6 @@
 <body>
 
     <div class="dashboard-container">
-        
-        <nav class="sidebar">
-            <div class="sidebar-links">
-                <a href="#">Task</a>
-                <a href="#">Portfolio</a>
-                <a href="#">OJT Progress</a>
-                <a href="#">Supervisor Feedback</a>
-                <a href="#">Recent Activities</a>
-                <a href="#">Make PDF Report</a>
-                <a href="#">Activities</a>
-            </div>
-        </nav>
 
         <div class="top-content">
             
@@ -34,11 +22,13 @@
                     <div class="search-bar">
                         <input type="text" placeholder="Search">
                     </div>
-                    <div class="header-icons">
-                        <span class="icon">✉️</span>
-                        <span class="icon">🔔</span>
-                        <span class="icon">👤</span>
-                    </div>
+                    <nav class="header-icons">
+                        <a href ="#" title = "Messages">✉️</a>
+                        <a href ="#" title = "Notifications">🔔</a>
+                        <a href ="#" title = "Profile">👤</a>
+                        <a href ="#" title = "Light Mode">☀️</a>
+                        <a href ="#" title = "Dark Mode">🌙</a>
+                    </nav>
                 </div>
             </header>
 
@@ -52,17 +42,14 @@
                                 <div class="progress-fill" style="width: 67%;">67% Complete</div>
                             </div>
                         </div>
-                        <h2>Hello (Name) Your OJT will end in:</h2>
+                        <h2>Your OJT will end in:</h2>
                         <h3 class="end-date">FEB 24 2027</h3>
                     </section>
 
                     <section class="action-grid">
-                        <button class="action-btn">Log OJT Attendance</button>
-                        <button class="action-btn">Make PDF Report</button>
+                        <button class="action-btn">Log OJT Hours</button>
+                        <button class="action-btn">Generate PDF Report</button>
                         <button class="action-btn">View Supervisor Feedback</button>
-                        <button class="action-btn">Task</button>
-                        <button class="action-btn">View OJT Progress</button>
-                        <button class="action-btn">Activities</button>
                     </section>
                 </main>
 
