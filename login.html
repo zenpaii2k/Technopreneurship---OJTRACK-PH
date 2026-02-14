@@ -4,87 +4,50 @@
     <title>OJTrack PH - LOGIN</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+    <link rel="stylesheet" href="login.css">
+</head>
+
 <body>
 
-    <div class="page-container">
+<div class="page-container">
+    
+    <header class="site-header">
+        <div class="company-header">
+            <img src="images/633412968_1977516346287127_5918068733792267466_n.jpg" class="header-logo">
+            <h1>OJTrack PH</h1>
+        </div>
+    </header>
 
-        <header class="site-header">
-            <div class="companyheader">
-                <img src="" alt="OJTrack PH Logo" class="header-logo">
-                <h1 class="site-title">OJTrack PH</h1>
+    
+    <main class="login-content">
+
+        <section class="login-card">
+
+            <h2>WELCOME TO</h2>
+            <div class="logo">
+                <img src="images/610551570_1263199728988936_4834396701990071248_n-removebg-preview.png">
             </div>
-        </header>
-
-        <main class="login-content">
-            <section class="login-card">                
-               <h2 class="welcome-text">WELCOME TO</h2> 
-                <img src="images/main-logo.png" alt="OJTrack PH Logo" class="card-logo">
 
                 <div class="button-group">
-                    <button class="btn btn-login">LOG IN</button>
-                    <button class="btn btn-admin">ADMIN LOG IN</button>
-                </div>
+                <a href="loginproper.html">
+                <button class="btn-login">LOG IN </button>
+                </a>
 
-                <p class="register-text">
-                    No Account? <a href="register.html" class="register-link">Register HERE</a>
-                </p>
-
-            </section>
-        </main>
-
-    </div>
-
-</body>
-</html>
-
-// LOGIN PROPER
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>OJTrack PH - LOGIN PROPER</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-<body>
-
-    <div class="page-container">
-
-        <header class="site-header">
-            <div class="companyheader">
-                <img src="" alt="OJTrack PH Logo" class="header-logo">
-                <h1 class="site-title">OJTrack PH</h1>
-            </div>
-        </header>
-
-         <main class="loginproper-content">
-            <section class="loginproper-card">                
-               <h2 class="welcome-text">WELCOME TO</h2> 
-                <img src="images/main-logo.png" alt="OJTrack PH Logo" class="card-logo">
-                <h2 class="welcomeph-text">PH</h2> 
-
-                <form action="php/register2.php" method="POST">
-
-                <label>Email</label>
-                <input type ="email" name = "email2" placeholder="Enter email" required>   
-
-                <label>Password</label>
-                <input type ="password" name = "passwd1" placeholder="Enter password" required>  
+                <a href="loginproper.html">
+                <button class="btn-adminlogin">ADMIN LOG IN</button>
+                </a>  
                 
-                  <div class="signin-button">
-                    <button class="btn-signin">Sign In</button>
-                </div>
+                <button class="register">
+                    No account? <a href="register.html">Register HERE</a>
+                </button>
+                </a>
+                </div>  
 
-                <div class="forgotpass">
-                <a href="#">Forgot Password?</a>
-                </div>         
-               </form>
+        </section>
 
-            </section>
-        </main>
+    </main>
 
-    </div>
+</div>
 
 </body>
 </html>
