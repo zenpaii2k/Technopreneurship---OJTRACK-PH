@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJTrack PH - DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <div class="top-content">
+            
+            <header class="dashboard-header">
+                <div class="companyheader">
+                <img src="" alt="OJTrack PH Logo" class="header-logo">
+                <h1 class="site-title">OJTrack PH</h1>
+            </div>
+
+                <div class="header-tools">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    <nav class="header-icons">
+                        <a href ="#" title = "Messages">✉️</a>
+                        <a href ="#" title = "Notifications">🔔</a>
+                        <a href ="#" title = "Profile">👤</a>
+                        <a href ="#" title = "Light Mode">☀️</a>
+                        <a href ="#" title = "Dark Mode">🌙</a>
+                    </nav>
+                </div>
+            </header>
+
+            
+             <section class="login-card">
+
+            <h2>WELCOME TO</h2>
+
+            <div class="logo">
+            <img src="images/610551570_1263199728988936_4834396701990071248_n-removebg-preview.png">
+            </div>
+
+        <div class="ojt-checklist">
+            <header class ="checklist-header">
+                <h2>OJT CHECKLIST</h2>
+                 <p>NAME<p>
+                 <p>YEAR & SECTION</p>
+            </header>
+
+        <table class="checklist-table">
+            <thead>
+                <tr>
+                    <th>OJT FORMS</th>
+                    <th>DATE GIVEN</th>
+                    <th>DATE SUBMITTED</th>
+                    <th>REMARKS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Information Sheet</td><td></td><td></td><td></td></tr>
+                <tr><td>Resume Template</td><td></td><td></td><td></td></tr>
+                <tr><td>Medical</td><td></td><td></td><td></td></tr>
+                <tr><td>Endorsement Letter</td><td></td><td></td><td></td></tr>
+                <tr><td>Consent Form</td><td></td><td></td><td></td></tr>
+                <tr><td>Proposal Letter</td><td></td><td></td><td></td></tr>
+                <tr><td>Memorandum of Agreement (MOA)</td><td></td><td></td><td></td></tr>
+                
+                <tr class="section-divider">
+                    <td colspan="4">OJT Requirements</td>
+                </tr>
+                
+                <tr><td>1st Quarter P.A.R/DTR</td><td></td><td></td><td></td></tr>
+                <tr><td>2nd Quarter P.A.R</td><td></td><td></td><td></td></tr>
+                <tr><td>3rd Quarter P.A.R/DTR</td><td></td><td></td><td></td></tr>
+                <tr><td>4th Quarter P.A.R</td><td></td><td></td><td></td></tr>
+                <tr><td>OJT Training Plan & Narrative Report Template</td><td></td><td></td><td></td></tr>
+                <tr><td>Narrative Report</td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+
+    </section>
+
+        </div> 
+    </div>
+
+</body>
+</html>
