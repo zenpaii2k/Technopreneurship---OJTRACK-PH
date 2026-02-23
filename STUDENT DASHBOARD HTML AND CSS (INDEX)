@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJTrack PH - DASHBOARD</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <div class="top-content">
+            
+           <header class="dashboard-header">
+            <div class="company-header"> 
+                <img src="../all pov/images/633412968_1977516346287127_5918068733792267466_n.jpg">
+            <h1 class="site-title">OJTrack PH</h1>
+        </div>
+
+            <div class="header-tools">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                
+                <nav class="header-icons">
+                    <a href="#" title="Messages">✉️</a>
+                    <a href="#" title="Notifications">🔔</a>
+                    <a href="#" title="Calendar">📅</a> 
+                    <a href="#" title="Profile">👤</a>
+                </nav>
+            </div>
+        </header>
+
+            <div class="main-layout">
+                <main class="center-content">
+                    <section class="ojtprogress-banner">
+                        <div class="progress-info">
+                            <span class="label">OJT Progress:</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-fill" style="width: 67%;">67% Complete</div>
+                            </div>
+                    </div>
+                    <h2>Your OJT will end in:</h2>
+                    <h3 class="end-date">FEB 24 2027</h3>
+                </section>
+
+                <section class="action-grid">
+                    <button class="action-btn"><span class="icon">🕒</span> Clock in/Clock Out</button>
+                    <button class="action-btn"><span class="icon">📄</span> Generate Report</button>
+                    <button class="action-btn"><span class="icon">✉️</span> View Feedback</button>
+                    <button class="action-btn"><span class="icon">✔️</span> OJT Checklist</button> 
+                </section>
+                
+            </main>
+
+                <aside class="widgets-area">
+                    <div class="widget cal-widget">
+                        <h4>Calendar</h4>
+                        <div class="cal-placeholder">Feb 2027</div>
+                    </div>
+                    
+                    <div class="widget todo-widget">
+                        <h4><span class="check-icon">✓</span> TO-DO: <span class="plus-icon">+</span></h4>
+                    </div>
+
+                    <div class="widget announce-widget">
+                        <h4>Announcements</h4>
+                    </div>
+
+                </aside>
+                </div>
+            </div> 
+        </div>  
+
+</body>
+</html>
+
+:root {
+    --bg-dark: #4c4c4c;
+    --header-bg: #373737;
+    --brand-yellow: #ffd400;
+    --brand-blue: #3b5998;
+    --widget-bg: #8c8c8c;
+    --text-white: #ffffff;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg-dark); 
+    color: var(--text-white); 
+}
+
+.dashboard-header {
+    background-color: var(--header-bg);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.company-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.company-header img { 
+    width: 45px;
+     border-radius: 8px; 
+}
+
+.site-title { 
+    color: var(--brand-yellow); 
+    font-size: 1.8rem; 
+}
+
+.header-tools { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+.search-bar { 
+    position: relative; 
+}
+.search-bar input {
+    padding: 8px 30px 8px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon { 
+    position: absolute; 
+    right: 10px; 
+    top: 7px; 
+    color: #333; 
+}
+
+.header-icons a { 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    color: var(--brand-yellow); 
+    margin-left: 10px; 
+}
+
+.main-layout { 
+    display: grid; 
+    grid-template-columns: 1fr 300px; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.ojtprogress-banner {
+    background-color: #a6a6a6;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.progress-bar-container {
+    background: #ddd;
+    border-radius: 10px;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.progress-fill {
+    background: linear-gradient(to right, var(--brand-blue), var(--brand-yellow));
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.action-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px;
+ }
+
+.action-btn {
+    background-color: #3b5998;
+    color: white;
+    padding: 15px;
+    border-radius: 30px; 
+    border: 2px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    padding-left: px;
+}
+
+.widget { 
+    border-radius: 10px; 
+    padding: 15px;
+     margin-bottom: 20px; 
+     color: #000; }
+
+.cal-widget { 
+    background-color: 
+    var(--brand-yellow); 
+    min-height: 250px; 
+}
+
+.todo-widget { 
+    background-color: 
+    var(--brand-yellow); 
+    min-height: 200px; 
+}
+
+.announce-widget { 
+    background-color: var(--brand-blue); 
+    color: var(--text-white); 
+    min-height: 150px; 
+}
+
+.widget h4 { 
+    display: flex; 
+    justify-content: 
+    space-between; 
+    align-items: center; 
+}
