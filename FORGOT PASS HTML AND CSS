@@ -194,8 +194,119 @@ input {
 
             </section>
         </main>
-
     </div>
 
 </body>
 </html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #4c4c4c;
+    color: white;
+}
+
+.site-header {
+    background: #373737;
+    padding: 10px 25px;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    width: 40px;
+}
+
+.company-header h1 {
+    color: #ffd400;
+}
+
+.forgotpass-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.forgotpass-card {
+    background: #1f1f1f;
+    width: 360px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+}
+
+.forgotpass-card h2 {
+    color: #ffd400;
+    margin-bottom: 10px;
+}
+
+.welcome-text logo {
+    align-items: center;
+    margin-right: 200%;
+    max-width: 100%; 
+    height: auto;
+}
+
+.welcome-text logo img {
+    align-items: center;
+    margin-right: 200%;
+    max-width: 100%; 
+    height: auto;
+}
+
+.login-card h2 {
+    color: #ffd400;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.forgotpass-card img {
+    align-items: center;
+    margin-right: 200%;
+    max-width: 100%; 
+    height: auto;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 10px;
+    background: #ffd400;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    cursor: pointer;
+    margin-top: 5px;
+}
