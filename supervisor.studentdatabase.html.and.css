@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJTrack PH - DASHBOARD</title>
+    <link rel="stylesheet" href="checkstudentdatabase.css">
+</head>
+<body>
+
+            <div class="dashboard-container">
+
+            <header class="dashboard-header">
+                <div class="company-header">
+                    <a href="supervisordashboard.html">
+                        <img src="../all pov/images/633412968_1977516346287127_5918068733792267466_n.jpg">
+                     </a>
+                    <h1 class="site-title">OJTrack PH</h1>
+                </div>
+
+                <div class="header-tools">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    
+                    <nav class="header-icons">
+                        <a href="#" title="Messages">✉️</a>
+                        <a href="#" title="Notifications">🔔</a>
+                        <a href="supervisoraccount.html" title="Profile">👤</a>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="main-layout">
+                <div class="page-header-banner">
+                    <h2 class="banner-text">Student Log Viewer</h2>
+                </div>
+
+                <main class="supervisor-content">
+                    <section class="report-card">
+                        <div class="card-header">
+                            <span class="icon">👤</span>
+                            <h3>Student Database Access</h3>
+                        </div>
+
+                        <div class="form-section">
+                            <label for="student-search">Select Student (Database)</label>
+                            <div class="search-input-wrapper">
+                                <span class="search-icon-inline">🔍</span>
+                                <input type="text" id="student-search" placeholder="Maria Clara Santos">
+                            </div>
+                            <p class="helper-text">Simulating database retrieval. Selecting a student auto-fills the report.</p>
+                        </div>
+
+                        <div class="logs-preview-section">
+                            <h4>Recent Attendance Logs</h4>
+                            <table class="logs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Time In</th>
+                                        <th>Time Out</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Feb 11, 2026</td>
+                                        <td>08:00 AM</td>
+                                        <td>05:00 PM</td>
+                                        <td class="status-verified">Verified</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="quick-actions">
+                            <h4>Quick Actions</h4>
+                            <button class="action-btn-outline">+ Add Supervisor Comment</button>
+                            <button class="action-btn-outline">+ Flag Record for Review</button>
+                        </div>
+
+                        <div class="card-footer">
+                            <button type="button" class="view-details-btn">View Detailed Student Profile</button>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+</body>
+</html>
+
+:root {
+    --bg-dark: #4c4c4c;
+    --header-bg: #373737;
+    --brand-yellow: #ffd400;
+    --brand-blue: #3b5998;
+    --widget-bg: #8c8c8c;
+    --text-white: #ffffff;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg-dark); 
+    color: var(--text-white); 
+}
+
+.dashboard-header {
+    background-color: var(--header-bg);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.company-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.company-header img { 
+    width: 45px;
+     border-radius: 8px; 
+}
+
+.site-title { 
+    color: var(--brand-yellow); 
+    font-size: 1.8rem; 
+}
+
+.header-tools { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.search-bar { 
+    position: relative; 
+}
+
+.search-bar input {
+    padding: 8px 30px 8px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon { 
+    position: absolute; 
+    right: 10px; 
+    top: 7px; 
+    color: #333; 
+}
+
+.header-icons a { 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    color: var(--brand-yellow); 
+    margin-left: 10px; 
+}
+
+.main-layout {
+    padding: 20px;
+    background-color: #4c4c4c;
+    min-height: 100vh;
+}
+
+.page-header-banner {
+    background-color: #3b5998;
+    color: #ffd400;
+    padding: 15px 30px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+}
+
+.report-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #333;
+    padding: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #3b5998;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.form-section label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.search-input-wrapper {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.search-input-wrapper input {
+    width: 100%;
+    padding: 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-icon-inline {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: #888;
+}
+
+.helper-text {
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.logs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.logs-table th {
+    text-align: left;
+    color: #3b5998;
+    border-bottom: 2px solid #3b5998;
+    padding: 10px;
+}
+
+.logs-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.status-verified {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.quick-actions h4 {
+    margin: 20px 0 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.action-btn-outline {
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: #555;
+}
+
+.action-btn-outline:hover {
+    background-color: #f8f9fa;
+    border-color: #3b5998;
+}
+
+.view-details-btn {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
