@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJTrack PH - GENERATE REPORT</title>
+    <link rel="stylesheet" href="generatepdf.css">
+</head>
+<body>
+
+        <div class="ojt-attendance-container">
+            
+        <header class="dashboard-header">
+
+            <div class="company-header">
+                <a href="index.html">
+                    <img src="../all pov/images/633412968_1977516346287127_5918068733792267466_n.jpg">
+                </a>
+                <h1 class="site-title">OJTrack PH</h1>
+            </div>
+
+            <div class="header-tools">
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <nav class="header-icons">
+                    <a href="#" title="Messages">✉️</a>
+                    <a href="#" title="Notifications">🔔</a>
+                    <a href="#" title="Calendar">📅</a> 
+                    <a href="account.html" title="Profile">👤</a>
+                </nav>
+            </div>
+            
+        </header>
+
+        <main class="report-layout">
+            <div class="report-badge">Make PDF Report</div>
+
+            <div class="report-grid">
+                <section class="info-card">
+                    <header class="card-title">
+                        <span class="icon">👤</span> Student Information
+                    </header>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label>👤 STUDENT NAME</label>
+                            <p>Juan Dela Cruz</p>
+                        </div>
+                        <div class="info-item">
+                            <label>🆔 STUDENT ID</label>
+                            <p>2021-00123</p>
+                        </div>
+                        <div class="info-item">
+                            <label>🎓 COURSE</label>
+                            <p>BSIT</p>
+                        </div>
+                        <div class="info-item">
+                            <label>🏫 SCHOOL</label>
+                            <p>STI College</p>
+                        </div>
+                        <div class="info-item">
+                            <label>🏢 COMPANY</label>
+                            <p>Tech Solutions Inc.</p>
+                        </div>
+                    </div>
+
+                    <div class="hours-row">
+                        <div class="info-item">
+                            <label>🕒 REQUIRED HOURS</label>
+                            <p>486 hrs</p>
+                        </div>
+                        <div class="info-item">
+                            <label>✅ COMPLETED HOURS</label>
+                            <p class="green-text">320 hrs</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-section">
+                        <label>Progress <span class="percent">67%</span></label>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 67%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prototype-note">
+                        <strong>Prototype Note</strong>
+                        <p>This student information is currently static (mock data) for demonstration purposes.</p>
+                    </div>
+                </section>
+
+                <section class="info-card">
+                    <header class="card-title">
+                        <span class="icon">📄</span> Report Content
+                    </header>
+                    
+                    <div class="input-group">
+                        <label>Document Title</label>
+                        <input type="text" value="Weekly Progress Report">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Content</label>
+                        <textarea placeholder="Type your report content here..."></textarea>
+                        <span class="char-count">0 characters</span>
+                    </div>
+
+                    <div class="button-group">
+                        <button class="btn-blue">Send Manual PDF Report</button>
+                        <button class="btn-orange">Generate PDF Report</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
+
+:root {
+    --bg-dark: #4c4c4c;
+    --header-bg: #373737;
+    --brand-yellow: #ffd400;
+    --brand-blue: #3b5998;
+    --widget-bg: #8c8c8c;
+    --text-white: #ffffff;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg-dark); 
+    color: var(--text-white); 
+}
+
+.dashboard-header {
+    background-color: var(--header-bg);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.company-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.company-header img { 
+    width: 45px;
+     border-radius: 8px; 
+}
+
+.site-title { 
+    color: var(--brand-yellow); 
+    font-size: 1.8rem; 
+}
+
+.header-tools { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.search-bar { 
+    position: relative; 
+}
+
+.search-bar input {
+    padding: 8px 30px 8px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon { 
+    position: absolute; 
+    right: 10px; 
+    top: 7px; 
+    color: #333; 
+}
+
+.header-icons a { 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    color: var(--brand-yellow); 
+    margin-left: 10px; 
+}
+
+.main-layout { 
+    display: grid; 
+    grid-template-columns: 1fr 300px; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.report-layout {
+    padding: 40px 20px;
+    background-color: #1e1e1e; 
+    min-height: 100vh;
+}
+
+.report-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.report-badge {
+    background-color: #3b5998;
+    color: #ffcc00;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    background-color: #2a2a2a; 
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.card-title {
+    color: #ffcc00;
+    font-weight: bold;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-item label {
+    font-size: 0.65rem;
+    color: #888;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.green-text { color: #4caf50; }
+
+.progress-section { margin-top: 20px; }
+.progress-bar {
+    height: 8px;
+    background: #444;
+    border-radius: 10px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    background: #3b5998;
+}
+
+.input-group { 
+    margin-bottom: 20px; 
+}
+.input-group label { 
+    display: block; 
+    color: #888; 
+    margin-bottom: 8px; 
+    font-size: 0.8rem; 
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    background: #1e1e1e;
+    border: 1px solid #444;
+    padding: 12px;
+    color: white;
+    border-radius: 8px;
+}
+
+textarea { height: 200px; resize: none; }
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-blue, .btn-orange {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-blue { 
+    background-color: #3b5998; 
+    color: white; 
+}
+.btn-orange { 
+    background-color: #e69500; 
+    color: white; 
+}
+
+.prototype-note {
+    background: rgba(59, 89, 152, 0.1);
+    border: 1px solid #3b5998;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 0.75rem;
+    color: #888;
+}
