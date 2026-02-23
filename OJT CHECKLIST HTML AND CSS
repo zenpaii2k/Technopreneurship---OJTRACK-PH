@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJTrack PH - CHECKLIST</title>
+    <link rel="stylesheet" href="checklist.css">
+</head>
+<body>
+
+   <div class="dashboard-container">
+
+            <header class="dashboard-header">
+                <div class="company-header">
+                    <a href="index.html">
+                        <img src="../all pov/images/633412968_1977516346287127_5918068733792267466_n.jpg">
+                    </a>
+                    <h1 class="site-title">OJTrack PH</h1>
+                </div>
+
+                <div class="header-tools">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    <nav class="header-icons">
+                        <a href="#" title="Messages">✉️</a>
+                        <a href="#" title="Notifications">🔔</a>
+                        <a href="#" title="Calendar">📅</a> 
+                        <a href="account.html" title="Profile">👤</a>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="checklist-layout">
+                <div class="checklist-card">
+                    <h2 class="checklist-main-title">OJT CHECKLIST</h2>
+                    
+                    <div class="student-meta">
+                        <div class="meta-row">
+                            <label>NAME:</label>
+                            <div class="meta-line"></div>
+                        </div>
+                        <div class="meta-row">
+                            <label>YEAR & SECTION:</label>
+                            <div class="meta-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-action">Add OJT Forms</button>
+                        <button class="btn-action">OJT Requirements</button>
+                    </div>
+
+                    <table class="checklist-table">
+                        <thead>
+                            <tr>
+                                <th>OJT FORMS</th>
+                                <th>DATE GIVEN</th>
+                                <th>DATE SUBMITTED</th>
+                                <th>REMARKS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Information Sheet</td><td></td><td></td><td></td></tr>
+                            <tr><td>Resume Template</td><td></td><td></td><td></td></tr>
+                            <tr><td>Medical</td><td></td><td></td><td></td></tr>
+                            <tr><td>Endorsement Letter</td><td></td><td></td><td></td></tr>
+                            <tr><td>Consent Form</td><td></td><td></td><td></td></tr>
+                            <tr><td>Proposal Letter</td><td></td><td></td><td></td></tr>
+                            <tr><td>Memorandum of Agreement (MOA)</td><td></td><td></td><td></td></tr>
+                            
+                            <tr class="section-divider">
+                                <td colspan="4">OJT Requirements</td>
+                            </tr>
+                            
+                            <tr><td>1st Quarter P.A.R/DTR</td><td></td><td></td><td></td></tr>
+                            <tr><td>2nd Quarter P.A.R</td><td></td><td></td><td></td></tr>
+                            <tr><td>3rd Quarter P.A.R/DTR</td><td></td><td></td><td></td></tr>
+                            <tr><td>4th Quarter P.A.R</td><td></td><td></td><td></td></tr>
+                            <tr><td>OJT Training Plan & Narrative Report Template</td><td></td><td></td><td></td></tr>
+                            <tr><td>Narrative report</td><td></td><td></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
+
+:root {
+    --bg-dark: #4c4c4c;
+    --header-bg: #373737;
+    --brand-yellow: #ffd400;
+    --brand-blue: #3b5998;
+    --widget-bg: #8c8c8c;
+    --text-white: #ffffff;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg-dark); 
+    color: var(--text-white); 
+}
+
+.dashboard-header {
+    background-color: var(--header-bg);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.company-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.company-header img { 
+    width: 45px;
+     border-radius: 8px; 
+}
+
+.site-title { 
+    color: var(--brand-yellow); 
+    font-size: 1.8rem; 
+}
+
+.header-tools { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.search-bar { 
+    position: relative; 
+}
+
+.search-bar input {
+    padding: 8px 30px 8px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon { 
+    position: absolute; 
+    right: 10px; 
+    top: 7px; 
+    color: #333; 
+}
+
+.header-icons a { 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    color: var(--brand-yellow); 
+    margin-left: 10px; 
+}
+
+.checklist-layout {
+    padding: 30px;
+    background-color: #4c4c4c;
+    display: flex;
+    justify-content: center;
+}
+
+.checklist-card {
+    background-color: #3b4252; 
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+.checklist-main-title {
+    color: #ffd400;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.student-meta {
+    margin-bottom: 25px;
+}
+
+.meta-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.meta-row label {
+    color: #ffd400;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.meta-line {
+    flex-grow: 1;
+    border-bottom: 2px solid #ffd400;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-action {
+    flex: 1;
+    background-color: #2e66ff;
+    color: white;
+    border: 1px solid #000;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checklist-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+.checklist-table th {
+    background-color: #2e66ff;
+    color: #ffd400;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #1a1a1a;
+}
+
+.checklist-table td {
+    padding: 10px;
+    border: 1px solid #1a1a1a;
+    background-color: #434c5e;
+}
+
+.section-divider td {
+    background-color: #ffd400;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.checklist-table tbody tr:hover td {
+    background-color: #4c566a;
+}
