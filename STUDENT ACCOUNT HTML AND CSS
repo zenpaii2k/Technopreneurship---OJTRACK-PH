@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="account.css">
+    <title>OJTrack PH - PROFILE</title>
+</head>
+<body>
+
+    <div class="account-container">
+        
+        <div class="profile-content">
+            
+            <header class="dashboard-header">
+                <div class="company-header">
+                <img src="../all pov/images/633412968_1977516346287127_5918068733792267466_n.jpg">
+                <h1 class="site-title">OJTrack PH</h1>
+            </div>
+
+                <div class="header-tools">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <span class="search-icon">🔍</span>
+                    </div>
+
+                    <nav class="header-icons">
+                    <a href="#" title="Messages">✉️</a>
+                    <a href="#" title="Notifications">🔔</a>
+                    <a href="#" title="Calendar">📅</a> 
+                    <a href="#" title="Profile">👤</a>
+                    </nav>
+                    
+                </div>
+            </header>
+
+            <main class="account-layout">
+            <section class="profile-card">
+                <div class="account-banner">Account</div>
+                <div class="profile-main-content">
+                    <div class="large-avatar">
+                        <img src="images/profile-placeholder.png" alt="User">
+                    </div>
+                </div>
+            </section>
+
+            <div class="account-grid">
+                <aside class="settings-sidebar">
+                    <p class="sidebar-label">Setting</p>
+                    <ul class="settings-list">
+                        <li><a href="#"><span class="icon">⚙️</span> Settings <span class="arrow">⇧A</span></a></li>
+                        <li><a href="#"><span class="icon">📷</span> Edit Profile <span class="arrow">⇧A</span></a></li>
+                        <li><a href="#"><span class="icon">🎖️</span> Awards <span class="arrow">⇧A</span></a></li>
+                        <hr>
+                        <li><a href="#"><span class="icon">🕒</span> Logs <span class="arrow">⇧A</span></a></li>
+                        <li><a href="#"><span class="icon">✔️</span> Completed Task <span class="arrow">⇧A</span></a></li>
+                    </ul>
+                </aside>
+
+                <section class="info-display-box"> </section>
+            </div>
+        </main>
+
+        </div> 
+    </div>
+
+</body>
+</html>
+
+:root {
+    --bg-dark: #4c4c4c;
+    --header-bg: #373737;
+    --brand-yellow: #ffd400;
+    --brand-blue: #3b5998;
+    --widget-bg: #8c8c8c;
+    --text-white: #ffffff;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg-dark); 
+    color: var(--text-white); 
+}
+
+.dashboard-header {
+    background-color: var(--header-bg);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.company-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.company-header img { 
+    width: 45px;
+     border-radius: 8px; 
+}
+
+.site-title { 
+    color: var(--brand-yellow); 
+    font-size: 1.8rem; 
+}
+
+.header-tools { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+.search-bar { 
+    position: relative; 
+}
+.search-bar input {
+    padding: 8px 30px 8px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon { 
+    position: absolute; 
+    right: 10px; 
+    top: 7px; 
+    color: #333; 
+}
+
+.header-icons a { 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    color: var(--brand-yellow); 
+    margin-left: 10px; 
+}
+
+.account-layout {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-card {
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    min-height: 250px;
+    position: relative;
+    padding: 40px;
+}
+
+.account-banner {
+    background-color: #3b5998; 
+    color: #ffcc00; 
+    padding: 10px 40px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    border: 2px solid #000;
+}
+
+.large-avatar img {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    border: 5px solid #333;
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+}
+
+.settings-sidebar {
+    background-color: #3b5998;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar-label {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.settings-list {
+    list-style: none;
+}
+
+.settings-list li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.settings-list li a:hover {
+    color: #ffcc00;
+}
+
+.settings-list .arrow {
+    margin-left: auto;
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.settings-list hr {
+    border: 0.5px solid rgba(255,255,255,0.2);
+    margin: 10px 0;
+}
+
+.info-display-box {
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    min-height: 300px;
+}
