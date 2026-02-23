@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OJTrack PH - DASHBOARD</title>
-    <link rel="stylesheet" href="style.css">
+    <title>OJTrack PH - SUPERVISOR DASHBOARD</title>
+    <link rel="stylesheet" href="supervisordashboard.css">
 </head>
 <body>
 
@@ -13,21 +13,20 @@
         <div class="top-content">
             
             <header class="dashboard-header">
-                <div class="companyheader">
-                <img src="" alt="OJTrack PH Logo" class="header-logo">
+                <div class="company-header">
+                <img src="../all pov/images/633412968_1977516346287127_5918068733792267466_n.jpg">
                 <h1 class="site-title">OJTrack PH</h1>
             </div>
 
                 <div class="header-tools">
                     <div class="search-bar">
                         <input type="text" placeholder="Search">
+                        <span class="search-icon">🔍</span>
                     </div>
                     <nav class="header-icons">
                         <a href ="#" title = "Messages">✉️</a>
                         <a href ="#" title = "Notifications">🔔</a>
-                        <a href ="#" title = "Profile">👤</a>
-                        <a href ="#" title = "Light Mode">☀️</a>
-                        <a href ="#" title = "Dark Mode">🌙</a>
+                        <a href ="supervisoraccount.html" title = "Profile">👤</a>
                     </nav>
                 </div>
             </header>
@@ -43,7 +42,11 @@
                     </section>
 
                     <section class="action-grid">
+
+                        <a href = "checkstudentdatabase.html">
                         <button class="action-btn">Check Student Database</button>
+                        </a>
+
                         <button class="action-btn">View Reports</button>
                         <button class="action-btn">Send Supervisor Feedback</button>
                     </section>
@@ -73,3 +76,80 @@
 
 </body>
 </html>
+
+:root {
+    --bg-dark: #4c4c4c;
+    --header-bg: #373737;
+    --brand-yellow: #ffd400;
+    --brand-blue: #3b5998;
+    --widget-bg: #8c8c8c;
+    --text-white: #ffffff;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg-dark); 
+    color: var(--text-white); 
+}
+
+.dashboard-header {
+    background-color: var(--header-bg);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.company-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.company-header img { 
+    width: 45px;
+     border-radius: 8px; 
+}
+
+.site-title { 
+    color: var(--brand-yellow); 
+    font-size: 1.8rem; 
+}
+
+.header-tools { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.search-bar { 
+    position: relative; 
+}
+
+.search-bar input {
+    padding: 8px 30px 8px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon { 
+    position: absolute; 
+    right: 10px; 
+    top: 7px; 
+    color: #333; 
+}
+
+.header-icons a { 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    color: var(--brand-yellow); 
+    margin-left: 10px; 
+}
