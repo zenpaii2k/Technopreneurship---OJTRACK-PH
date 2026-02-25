@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJTrack PH - VIEW REPORTS</title>
+    <link rel="stylesheet" href="checkstudentreq.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="company-header">
+                <a href="supervisordashboard.html">
+                    <img src="../all pov/images/633412968_1977516346287127_5918068733792267466_n.jpg" alt="OJTrack Logo" class="header-logo">
+                </a>
+                <h1 class="site-title">OJTrack PH</h1>
+            </div>
+
+            <div class="header-tools">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                
+                <nav class="header-icons">
+                    <a href="#" title="Messages">✉️</a>
+                    <a href="#" title="Notifications">🔔</a>
+                    <a href="supervisoraccount.html" title="Profile">👤</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <div class="page-header-banner">
+                <h2 class="banner-text">Check Student Checklist</h2>
+            </div>
+
+                    <main class="checklist-layout">
+                    <div class="checklist-card">
+                        <h2 class="checklist-main-title">OJT CHECKLIST</h2>
+                        
+                        <div class="student-meta">
+                            <div class="meta-row">
+                                <label>NAME:</label>
+                                <div class="meta-line">Maria Clara Santos</div>
+                            </div>
+                            <div class="meta-row">
+                                <label>YEAR & SECTION:</label>
+                                <div class="meta-line">BSIT - 4A</div>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button class="btn-action">Download All PDF</button>
+                            <button class="btn-action-outline">Mark All as Received</button>
+                        </div>
+
+                        <table class="checklist-table">
+                            <thead>
+                                <tr>
+                                    <th>OJT FORMS</th>
+                                    <th>DATE GIVEN</th>
+                                    <th>DATE SUBMITTED</th>
+                                    <th>REMARKS / ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Information Sheet</td><td>2026-02-01</td><td>2026-02-05</td><td><span class="badge verified">Verified</span></td></tr>
+                                <tr><td>Resume Template</td><td>2026-02-01</td><td>2026-02-06</td><td><span class="badge verified">Verified</span></td></tr>
+                                <tr><td>Medical</td><td>2026-02-01</td><td>2026-02-10</td><td><span class="badge pending">For Review</span></td></tr>
+                                <tr><td>Endorsement Letter</td><td>2026-02-05</td><td>---</td><td><button class="btn-row-action">Approve</button></td></tr>
+                                <tr><td>Consent Form</td><td>2026-02-05</td><td>2026-02-12</td><td><span class="badge verified">Verified</span></td></tr>
+                                <tr><td>Proposal Letter</td><td>2026-02-05</td><td>---</td><td><button class="btn-row-action">Approve</button></td></tr>
+                                <tr><td>Memorandum of Agreement (MOA)</td><td>2026-02-10</td><td>---</td><td><span class="badge missing">Missing</span></td></tr>
+                                
+                                <tr class="section-divider">
+                                    <td colspan="4">OJT Requirements</td>
+                                </tr>
+                                
+                                <tr><td>1st Quarter P.A.R/DTR</td><td>---</td><td>---</td><td><button class="btn-row-action">Verify</button></td></tr>
+                                <tr><td>2nd Quarter P.A.R</td><td>---</td><td>---</td><td>---</td></tr>
+                                <tr><td>3rd Quarter P.A.R/DTR</td><td>---</td><td>---</td><td>---</td></tr>
+                                <tr><td>4th Quarter P.A.R</td><td>---</td><td>---</td><td>---</td></tr>
+                                <tr><td>OJT Training Plan & Narrative Report Template</td><td>2026-02-15</td><td>---</td><td>---</td></tr>
+                                <tr><td>Narrative Report</td><td>---</td><td>---</td><td><span class="badge incomplete">Incomplete</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+:root {
+    --bg-dark: #4c4c4c;
+    --header-bg: #373737;
+    --brand-yellow: #ffd400;
+    --brand-blue: #3b5998;
+    --widget-bg: #8c8c8c;
+    --text-white: #ffffff;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg-dark); ; 
+}
+
+.dashboard-header {
+    background-color: var(--header-bg);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.company-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.company-header img { 
+    width: 45px;
+     border-radius: 8px; 
+}
+
+.site-title { 
+    color: var(--brand-yellow); 
+    font-size: 1.8rem; 
+}
+
+.header-tools { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.search-bar { 
+    position: relative; 
+}
+
+.search-bar input {
+    padding: 8px 30px 8px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon { 
+    position: absolute; 
+    right: 10px; 
+    top: 7px; 
+    color: #333; 
+}
+
+.header-icons a { 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    color: var(--brand-yellow); 
+    margin-left: 10px; 
+}
+
+.main-layout {
+    background-color: #4c4c4c;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.page-header-banner {
+    background-color: #2e66ff; 
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 12px;
+    margin: 20px 0 20px 20px;
+    border: 2px solid #000;
+}
+
+.banner-text {
+    margin: 0;
+    color: #ffd400;
+    font-size: 1.2rem;
+}
+
+.checklist-layout { 
+    padding: 40px 20px; 
+}
+
+.checklist-card {
+    background-color: white; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    color: var(--text-dark);
+}
+
+.checklist-main-title {
+    text-align: center;
+    color: var(--brand-blue);
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.student-meta { 
+    margin-bottom: 30px; 
+}
+
+.meta-row { 
+    display: flex; 
+    align-items: flex-end; 
+    margin-bottom: 15px; 
+}
+
+.meta-row label { 
+    font-weight: bold; 
+    width: 180px; 
+}
+
+.meta-line { 
+    flex-grow: 1; 
+    border-bottom: 1px solid #333; 
+    padding-left: 10px; 
+    color: var(--brand-blue); 
+    font-weight: bold; 
+}
+
+.action-buttons { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+.btn-action { 
+    background: var(--brand-blue); 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.btn-action-outline { 
+    background: white; 
+    color: var(--brand-blue); 
+    border: 1px solid var(--brand-blue); 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.checklist-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 10px; 
+}
+
+.checklist-table th { 
+    background-color: #f2f2f2; 
+    text-align: left; 
+    padding: 12px; 
+    border: 1px solid #ddd; 
+    color: var(--brand-blue); 
+}
+
+.checklist-table td { 
+    padding: 12px; 
+    border: 1px solid #ddd; 
+    font-size: 0.9rem; 
+}
+
+.section-divider { 
+    background-color: #e9ecef; 
+    font-weight: bold; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+.badge {
+     padding: 5px 10px; 
+     border-radius: 4px; 
+     font-size: 0.75rem; 
+     font-weight: bold; 
+    }
+
+.verified { 
+    background: #d4edda; 
+    color: #155724; 
+}
+
+.pending { 
+    background: #fff3cd;
+    color: #856404; 
+}
+
+.missing { 
+    background: #f8d7da; 
+    color: #721c24; 
+}
+
+.incomplete { 
+    background: #e2e3e5; 
+    color: #383d41; 
+}
+
+.btn-row-action { 
+    background: var(--brand-yellow); 
+    border: none; 
+    padding: 4px 8px; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
