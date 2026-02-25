@@ -574,3 +574,576 @@ body {
     transition:.2s;
     text-decoration: none;
 }
+
+//SUPERVISOR
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OJTrack PH - SUPERVISOR REGISTRATION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="supervisorregister.css">
+</head>
+
+<body>
+
+        <header class="site-header">
+            <div class="company-header">
+            <img src="images/633412968_1977516346287127_5918068733792267466_n.jpg" class="header-logo">
+            <h1>OJTrack PH</h1>
+            </div>
+        </header>
+
+                <main class="center">
+
+                    <section class="register-panel">
+
+                <div class="form-card">
+
+                <form action="supervisorregister1.html" method="GET">
+
+                    <div class="field">
+                    <label>Email</label>
+                    <input type="email" required>
+                    </div>
+
+                    <div class="field">
+                    <label>Password</label>
+                    <input type="password" required>
+                    </div>
+
+                    <div class="terms">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">I agree with the terms and conditions</label>
+                    </div>
+
+                <div class="submit-btn">              
+                <button class = "submit-btn">Submit</button>
+                </div>
+
+             </form>
+
+        </div>
+
+</section>
+
+</main>
+
+</body>
+</html>
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body {
+    background:#4c4c4c;
+}
+
+.site-header {
+    background:#373737;
+    padding:10px 25px;
+}
+
+.company-header {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.header-logo {
+    width:40px;
+}
+
+.company-header h1 {
+    color:#ffd400;
+}
+
+.center {
+    min-height:calc(100vh - 60px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.register-panel {
+
+    background:#1f1f1f;
+    width:360px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.form-card {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.field {
+    margin-bottom:12px;
+}
+
+label {
+    display:block;
+    font-size:12px;
+    margin-bottom:4px;
+    color:black;
+}
+
+input {
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.terms {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:10px 0;
+    font-size:12px;
+    color:black;
+}
+
+.terms input {
+    width:auto;
+}
+
+.submit-btn {
+    width:100%;
+    padding:10px;
+    background:#ffd400;
+    border:none;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+    text-decoration: none;
+}
+
+
+//SUPERVISOR 1 HTML AND CSS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OJTrack PH - SUPERVISOR REGISTRATION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="supervisorregister1.css">
+</head>
+
+    <body>
+
+            <header class="site-header">
+                <div class="company-header">
+                <img src="images/633412968_1977516346287127_5918068733792267466_n.jpg" class="header-logo">
+                <h1>OJTrack PH</h1>
+            </div>
+            </header>
+
+        <main class="center">
+
+        <section class="register-panel">
+
+        <h2 class = "register-title">REGISTER</h2>
+
+        <div class="form-card">
+
+            <form action="supervisorregister2.html" method="GET">
+
+            <label>Name</label>
+            <input type="text" required>
+
+            <label>Surname</label>
+            <input type="text" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Message</label>
+            <textarea></textarea>
+
+            <div class="submit-btn">              
+            <button class = "submit-btn">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+</body>
+</html>
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body {
+    background:#4c4c4c;
+}
+
+.site-header {
+    background:#373737;
+    padding:10px 25px;
+}
+
+.company-header {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.header-logo {
+    width:40px;
+}
+
+.company-header h1 {
+    color:#ffd400;
+}
+
+.center {
+    min-height:calc(100vh - 60px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.register-panel {
+
+    background:#1f1f1f;
+    width:500px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.register-title {
+    color: white;
+    font-size: 4.5rem; 
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.form-card {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.field {
+    margin-bottom:12px;
+}
+
+label {
+    display:block;
+    font-size:12px;
+    margin-bottom:4px;
+    color:black;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px; 
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-btn {
+    width:100%;
+    padding:10px;
+    background:#ffd400;
+    border:none;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+    text-decoration: none;
+}
+
+// SUPERVISOR 3 HTML AND CSS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OJTrack PH - SUPERVISOR REGISTRATION</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="supervisorregister2.css">
+    </head>
+<body>
+
+    <div class="page-container">
+
+        <header class="site-header">
+            <div class="company-header">
+                <img src="images/633412968_1977516346287127_5918068733792267466_n.jpg" class="header-logo">
+                <h1 class="site-title">OJTrack PH</h1>
+            </div>
+        </header>
+
+        <main class="center">
+            <section class="register-panel">                
+               <h2 class="register-title">REGISTER</h2> 
+
+               <div class = "form-card">
+
+               <form action="supervisorcomplete.html" method="GET">
+
+                <label>OJT Class</label>
+                <input type ="text" name = "ojtclass" placeholder = "OJT Class" required>
+
+                <label>School Name</label>
+                <input type ="text" name = "schoolname" placeholder="School Name" required>     
+                
+                <label>Contact Email</label>
+                <input type ="email" name = "contactemail" placeholder="Email" required>     
+
+                <label>Other Contacts (Optional)</label>
+                <input type ="text" name = "othcontacts" placeholder="Value"> 
+
+                <label>OJT Company Name</label>
+                <input type ="text" name = "ojtcompany" placeholder="OJT Company Name" required>
+
+                <label>OJT Time Start</label>
+                <input type ="text" name = "timestart" placeholder="00:00 AM/PM" required>     
+                
+                <label>OJT Time End</label>
+                <input type ="text" name = "timeend" placeholder="00:00 AM/PM" required>       
+
+                <label>Number of OJT Days</label>
+                <input type ="number" name = "ojtdays" placeholder="000 days">      
+
+                <div class = "submit-btn">
+                <button class = "submit-btn">Submit</button>
+                </div>
+
+               </form>    
+               
+               </div>
+
+          </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body {
+    background:#4c4c4c;
+}
+
+.site-header {
+    background:#373737;
+    padding:10px 25px;
+}
+
+.company-header {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.header-logo {
+    width:40px;
+}
+
+.company-header h1 {
+    color:#ffd400;
+}
+
+.center {
+    min-height:calc(100vh - 60px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.register-panel {
+
+    background:#1f1f1f;
+    width:500px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.register-title {
+    color: white;
+    font-size: 4.5rem; 
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.form-card {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.field {
+    margin-bottom:12px;
+}
+
+label {
+    display:block;
+    font-size:12px;
+    margin-bottom:4px;
+    color:black;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px; 
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+
+.submit-btn {
+    width:100%;
+    padding:10px;
+    background:#ffd400;
+    border:none;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+    text-decoration: none;
+}
+
+
+//SUPERVISOR COMPLETED HTML AND CSS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OJTrack PH - SUPERVISOR REGISTRATION COMPLETED</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="supervisorcomplete.css">
+
+    </head>
+<body>
+
+    <div class="page-container">
+
+        <header class="site-header">
+            <div class="company-header">
+                <img src="images/633412968_1977516346287127_5918068733792267466_n.jpg" class="header-logo">
+                <h1 class="site-title">OJTrack PH</h1>
+            </div>
+        </header>
+
+        <main class="center">
+            <section class="registration-completed">                
+               <h2 class="completed">REGISTRATION COMPLETED!</h2>
+
+                <a href="login.html">
+                <button class="btn-returntologin">Return to Login</button>
+                </a>  
+
+          </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body {
+    background:#4c4c4c;
+}
+
+.site-header {
+    background:#373737;
+    padding:10px 25px;
+}
+
+.company-header {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.header-logo {
+    width:40px;
+}
+
+.company-header h1 {
+    color:#ffd400;
+}
+
+.center {
+    min-height:calc(100vh - 100px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.registration-completed {
+    text-align: center;
+    background: #1f1f1f;
+    padding: 60px;
+    border-radius: 15px;
+}
+
+.completed {
+    color: #ffd400; 
+    font-size: 3rem;
+    font-family: 'Impact', sans-serif;
+    margin: 20px 0;
+}
+
+.btn-returntologin {
+    padding:10px;
+    background-color: #4169E1; 
+    color: white;
+    border:none;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+    text-decoration: none;
+}
+
+
