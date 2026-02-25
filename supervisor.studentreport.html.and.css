@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJTrack PH - VIEW REPORTS</title>
+    <link rel="stylesheet" href="checkstudentreports.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="company-header">
+                <a href="supervisordashboard.html">
+                    <img src="../all pov/images/633412968_1977516346287127_5918068733792267466_n.jpg" alt="OJTrack Logo" class="header-logo">
+                </a>
+                <h1 class="site-title">OJTrack PH</h1>
+            </div>
+
+            <div class="header-tools">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                
+                <nav class="header-icons">
+                    <a href="#" title="Messages">✉️</a>
+                    <a href="#" title="Notifications">🔔</a>
+                    <a href="supervisoraccount.html" title="Profile">👤</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <div class="page-header-banner">
+                <h2 class="banner-text">Student Report Submissions</h2>
+            </div>
+
+            <main class="supervisor-content">
+                <section class="report-card">
+                    <div class="card-header">
+                        <span class="icon">📄</span>
+                        <h3>Submission Review Portal</h3>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="student-search">Active OJT Students</label>
+                        <div class="search-input-wrapper">
+                            <span class="search-icon-inline">🔍</span>
+                            <input type="text" id="student-search" placeholder="Enter student name to view reports...">
+                        </div>
+                        <p class="helper-text">Retrieving submitted PDF and Narrative reports from the database.</p>
+                    </div>
+
+                    <div class="reports-preview-section">
+                        <h4>Pending & Recent Reports</h4>
+                        <table class="reports-table">
+                            <thead>
+                                <tr>
+                                    <th>Submission Date</th>
+                                    <th>Report Title</th>
+                                    <th>Type</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Feb 20, 2026</td>
+                                    <td>Weekly Progress - Week 3</td>
+                                    <td>Narrative</td>
+                                    <td><span class="status-badge pending">Pending Review</span></td>
+                                    <td><button class="btn-table-view">Open</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Feb 13, 2026</td>
+                                    <td>Midterm Accomplishment</td>
+                                    <td>PDF Report</td>
+                                    <td><span class="status-badge verified">Verified</span></td>
+                                    <td><button class="btn-table-view">Open</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="quick-actions">
+                        <h4>Feedback Controls</h4>
+                        <div class="action-buttons-group">
+                            <button class="action-btn-outline comment-btn">✍️ Add Comment to Report</button>
+                            <button class="action-btn-outline approve-btn">✅ Approve for Printing</button>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <button type="button" class="view-details-btn">Export Student Evaluation Summary</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
+
+:root {
+    --bg-dark: #4c4c4c;
+    --header-bg: #373737;
+    --brand-yellow: #ffd400;
+    --brand-blue: #3b5998;
+    --widget-bg: #8c8c8c;
+    --text-white: #ffffff;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg-dark); ; 
+}
+
+.dashboard-header {
+    background-color: var(--header-bg);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.company-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.company-header img { 
+    width: 45px;
+     border-radius: 8px; 
+}
+
+.site-title { 
+    color: var(--brand-yellow); 
+    font-size: 1.8rem; 
+}
+
+.header-tools { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.search-bar { 
+    position: relative; 
+}
+
+.search-bar input {
+    padding: 8px 30px 8px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon { 
+    position: absolute; 
+    right: 10px; 
+    top: 7px; 
+    color: #333; 
+}
+
+.header-icons a { 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    color: var(--brand-yellow); 
+    margin-left: 10px; 
+}
+
+.main-layout {
+    background-color: #4c4c4c;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.page-header-banner {
+    background-color: #2e66ff; 
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 12px;
+    margin: 20px 0 20px 20px;
+    border: 2px solid #000;
+}
+
+.banner-text {
+    margin: 0;
+    color: #ffd400;
+    font-size: 1.2rem;
+}
+
+.report-card {
+    background-color: white;
+    margin: 0 25px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    color: var(--brand-blue); 
+    margin-bottom: 20px; 
+}
+
+.search-input-wrapper {
+    position: relative;
+    margin: 10px 0;
+}
+
+.search-icon-inline { 
+    position: absolute; 
+    left: 12px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    color: var(--text-grey); 
+}
+
+.search-input-wrapper input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.helper-text { 
+    font-size: 0.8rem; 
+    color: var(--text-grey); 
+    font-style: italic; 
+}
+
+.reports-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+
+.reports-table th { 
+    text-align: left; 
+    padding: 12px; 
+    background: #f8f9fa; 
+    border-bottom: 2px solid var(--brand-blue); 
+}
+
+.reports-table td { 
+    padding: 12px; 
+    border-bottom: 1px solid #eee; 
+}
+
+.status-badge { 
+    padding: 5px 10px; 
+    border-radius: 15px; 
+    font-size: 0.75rem; 
+    font-weight: bold; 
+}
+
+.status-badge.verified { 
+    background: #e6ffed; 
+    color: var(--status-green); 
+}
+.status-badge.pending { 
+    background: #fff4e5; 
+    color: var(--status-orange); 
+}
+
+.btn-table-view { 
+    background: var(--brand-blue); 
+    color: #fff; 
+    border: none; 
+    padding: 5px 12px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+.action-buttons-group { 
+    display: flex;
+    gap: 15px; 
+    margin-top: 15px; 
+}
+
+.action-btn-outline {
+    flex: 1;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid var(--brand-blue);
+    color: var(--brand-blue);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action-btn-outline:hover { 
+    background: var(--brand-blue); 
+    color: #fff; }
+
+.view-details-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    background: white;
+    color: var(--brand-blue);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
